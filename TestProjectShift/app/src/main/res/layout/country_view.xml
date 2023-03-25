@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:id="@+id/nameParamCountryView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contextClickable="true"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="6dp"
+        android:text="COUNTRY"/>
+
+    <TextView
+        android:id="@+id/nameCountry"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/nameParamCountryView"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="10dp"
+        android:textColor="@android:color/black"
+        android:text="неизвестно"/>
+
+    <TextView
+        android:id="@+id/latitude"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/nameCountry"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="10dp"
+        android:textSize="6dp"
+        android:textColor="@android:color/darker_gray"
+        android:text="( latitude: "/>
+
+    <TextView
+        android:id="@+id/latitudeValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toRightOf="@id/latitude"
+        app:layout_constraintTop_toBottomOf="@id/nameCountry"
+        android:layout_marginLeft="1dp"
+        android:layout_marginBottom="10dp"
+        android:textSize="6dp"
+        android:textColor="@android:color/black"
+        android:text="55"/>
+
+    <TextView
+        android:id="@+id/longitude"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toRightOf="@id/latitudeValue"
+        app:layout_constraintTop_toBottomOf="@id/nameCountry"
+        android:layout_marginLeft="1dp"
+        android:layout_marginBottom="10dp"
+        android:textSize="6dp"
+        android:textColor="@android:color/darker_gray"
+        android:text=",  longitude: "/>
+
+    <TextView
+        android:id="@+id/longitudeValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toRightOf="@id/longitude"
+        app:layout_constraintTop_toBottomOf="@id/nameCountry"
+        android:layout_marginLeft="1dp"
+        android:layout_marginBottom="10dp"
+        android:textSize="6dp"
+        android:textColor="@android:color/black"
+        android:text="55"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toRightOf="@id/longitudeValue"
+        app:layout_constraintTop_toBottomOf="@id/nameCountry"
+        android:layout_marginBottom="10dp"
+        android:textSize="6dp"
+        android:textColor="@android:color/darker_gray"
+        android:text=" )"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:id="@+id/nameParamCardNumberView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contextClickable="true"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="6dp"
+        android:text="CARD NUMBER"/>
+
+    <TextView
+        android:id="@+id/Length"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/nameParamCardNumberView"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="10dp"
+        android:textSize="5dp"
+        android:textColor="@android:color/darker_gray"
+        android:text="LENGTH"/>
+
+    <TextView
+        android:id="@+id/Luhn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toRightOf="@+id/Length"
+        app:layout_constraintTop_toBottomOf="@id/nameParamCardNumberView"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="10dp"
+        android:textSize="5dp"
+        android:textColor="@android:color/darker_gray"
+        android:text="LUHN"/>
+
+    <TextView
+        android:id="@+id/LengthValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/Length"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="10dp"
+        android:textColor="@android:color/black"
+        android:text="55"/>
+
+    <TextView
+        android:id="@+id/LuhnValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/Luhn"
+        app:layout_constraintLeft_toLeftOf="@id/Luhn"
+        android:layout_marginBottom="10dp"
+        android:textColor="@android:color/black"
+        android:text="55"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
